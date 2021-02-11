@@ -5,12 +5,12 @@ public class FirstandLastReverse {
 	public static void main(String[] args) {
 		
 		String str="nikhil aggarwal";
-		System.out.print(reversefirstchar(str));
+		reversefirstchar(str);
 		
 
 	}
 
-	public static String reversefirstchar(String s) {
+	public static void reversefirstchar(String s) {
 	
 		char[] c =s.toCharArray();
 		
@@ -25,10 +25,15 @@ public class FirstandLastReverse {
 				c[k]=c[i-1];
 				c[i-1]=temp;
 				
-			
+				
+		}
+		for(int j=0;j<c.length;j++) {
+			System.out.print(c[j]);
 		}
 		
-		return new String(c);
+		
+		
+		
 		
 	   
 	
